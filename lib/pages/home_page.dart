@@ -34,7 +34,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
               children: const <Widget> [
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: Text('Innovative Task#',
+                  child: Text('Innovative Task',
                     style: TextStyle(
                         fontSize: 25
                     ),
