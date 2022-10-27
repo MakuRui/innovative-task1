@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:innovative_task1/tabs/bagac_tab.dart';
 import '../tabs/bontia_tab.dart';
+
 
 
 class HomePage extends StatefulWidget {
@@ -16,7 +18,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
   @override
   void initState() {
     tabController = TabController(
-      length: 1,
+      length: 2,
       vsync: this,
       initialIndex: 0,
     );
@@ -60,7 +62,8 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
             ),
             bottom: TabBar(controller: tabController,
                 tabs: [
-                  Tab(child: Row(
+                  Tab(
+                    child: Row(
                     children: [
                       Container(
                         width: 30,
@@ -82,6 +85,31 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                     ],
                   ),
                   ),
+
+                  Tab(
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 30,
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/francis.jpg'),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        const Text('Bagac Family',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
                 ]
             )
         ),
@@ -92,6 +120,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                     controller: tabController,
                     children: const [
                       BontiaTab(),
+                      BagacTab(),
                     ]
                 )
             )
