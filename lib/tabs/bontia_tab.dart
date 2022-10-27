@@ -42,7 +42,7 @@ class _BontiaTabState extends State<BontiaTab> {
     'Taxi Driver'
   ];
 
-  static List <String> pBirthaday = [
+  static List <String> pBirthday = [
     'March 11, 2002',
     'August 02, 2004',
     'March 27 2006',
@@ -66,7 +66,7 @@ class _BontiaTabState extends State<BontiaTab> {
         '${aImage[index]}',
         pRelationship[index],
         pOccupation[index],
-        pBirthaday[index],
+        pBirthday[index],
         pAge[index],
       )
   );

@@ -40,7 +40,7 @@ class _DelaCruzState extends State<DelaCruz> {
     'Government Employee'
   ];
 
-  static List <String> pBirthaday = [
+  static List <String> pBirthday = [
     'November 1, 2001',
     'March 21, 1969',
     'November 9, 1990',
@@ -62,7 +62,7 @@ class _DelaCruzState extends State<DelaCruz> {
         '${aImage[index]}',
         pRelationship[index],
         pOccupation[index],
-        pBirthaday[index],
+        pBirthday[index],
         pAge[index],
       )
   );

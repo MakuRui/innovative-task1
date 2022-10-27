@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Group 4 Innovative Task #1',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.blueGrey,
           primaryColor: Colors.white,
           textTheme: const TextTheme(
               bodyText2: TextStyle(color: Colors.white)

@@ -2,55 +2,54 @@ import 'package:flutter/material.dart';
 import 'package:innovative_task1/pages/profile_details.dart';
 import '../models/profile_model.dart';
 
-
-class BagacTab extends StatefulWidget {
-  const BagacTab({Key? key}) : super(key: key);
+class PacuitTab extends StatefulWidget {
+  const PacuitTab({Key? key}) : super(key: key);
 
   @override
-  State<BagacTab> createState() => _BagacTabState();
+  State<PacuitTab> createState() => _PacuitTabState();
 }
 
-class _BagacTabState extends State<BagacTab> {
+class _PacuitTabState extends State<PacuitTab> {
 
   static List <String> name = [
-    'Francis Gabreiel P. Bagac',
-    'Lorraine Joy Bagac',
-    'Maria Lyra Bagac',
-    'Teofilo Bagac'
+    'Nico B. Pacuit',
+    'Justin B. Pacuit',
+    'Nieves B. Pacuit',
+    'Rico A. Pacuit',
   ];
 
   static List aImage = [
-    'francis.jpg',
-    'lorraine.jpg',
-    'marialyra.jpg',
-    'teofilo.jpg'];
+    'nico_pacuit.jpg',
+    'justin_pacuit.jpg',
+    'nieves_pacuit.jpg',
+    'rico_pacuit.jpg'];
 
   static List <String> pRelationship = [
     'Me',
-    'Sister',
+    'Brother',
     'Mother',
     'Father'
   ];
 
   static List <String> pOccupation = [
     'Student',
-    'Teacher',
+    'Chef',
     'House Wife',
-    'OFW'
+    'Government Employee'
   ];
 
   static List <String> pBirthday = [
-    'December 1, 2000',
-    'May 18, 1997',
-    'May 27, 1966',
-    'March 15, 1959'
+    'November 18, 2001',
+    'July 9, 1996',
+    'June 9, 1972',
+    'October 31, 1971'
   ];
 
   static List <String> pAge = [
-    '21',
-    '25',
-    '56',
-    '63',
+    '20',
+    '26',
+    '50',
+    '51'
   ];
 
   final List<ProfileModel> profileData = List.generate(
