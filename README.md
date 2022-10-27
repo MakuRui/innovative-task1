@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+We the BSIT-3R1 Group 4 are required to create this project for our Innovative Task from Mobile Programming Course
 
 This project is a starting point for a Flutter application.
 
