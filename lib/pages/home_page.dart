@@ -60,30 +60,35 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                 ),
               ),
             ),
-            bottom: TabBar(controller: tabController,
-                tabs: [
-                  Tab(
-                    child: Row(
-                    children: [
-                      Container(
-                        width: 30,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          image: DecorationImage(
-                            image: AssetImage('assets/mark_bontia.jpg'),
+            bottom: PreferredSize(
+              preferredSize: Size.fromHeight(30),
+                child: TabBar(
+                  indicatorColor: Colors.white,
+                    isScrollable: true,
+                    controller: tabController,
+                    tabs: [
+                      Tab(
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 30,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/mark_bontia.jpg'),
+                                ),
+                              ),
+                            ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        const Text('Bontia Family',
+                          style: TextStyle(
+                              color: Colors.white
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      const Text('Bontia Family',
-                        style: TextStyle(
-                            color: Colors.white
-                        ),
-                      ),
-                    ],
-                  ),
+                      ],
+                    ),
                   ),
 
                   Tab(
@@ -110,8 +115,10 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                     ),
                   ),
 
+
                 ]
-            )
+            )),
+
         ),
         body: Column(
           children: [
