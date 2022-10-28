@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:innovative_task1/tabs/bagac_tab.dart';
+import 'package:innovative_task1/tabs/radaza_tab.dart';
 import '../tabs/bontia_tab.dart';
 import '../tabs/delacruz_tab.dart';
 import '../tabs/pacuit_tab.dart';
+
 
 
 
@@ -20,7 +22,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
   @override
   void initState() {
     tabController = TabController(
-      length: 4,
+      length: 5,
       vsync: this,
       initialIndex: 0,
     );
@@ -161,8 +163,29 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                           ],
                         ),
                       ),
-
-
+                      Tab(
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 30,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                  image: AssetImage('sean_Radaza.jpg'),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            const Text('Radaza Family',
+                              style: TextStyle(
+                                  color: Colors.white
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                 ]
             )),
 
@@ -177,6 +200,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                       BagacTab(),
                       DelaCruz(),
                       PacuitTab(),
+                      Radazatab(),
                     ]
                 )
             )

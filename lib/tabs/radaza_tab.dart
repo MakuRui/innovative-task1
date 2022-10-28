@@ -2,55 +2,81 @@ import 'package:flutter/material.dart';
 import 'package:innovative_task1/pages/profile_details.dart';
 import '../models/profile_model.dart';
 
-
-class BagacTab extends StatefulWidget {
-  const BagacTab({Key? key}) : super(key: key);
+class Radazatab extends StatefulWidget {
+  const Radazatab({Key? key}) : super(key: key);
 
   @override
-  State<BagacTab> createState() => _BagacTabState();
+  State<Radazatab> createState() => _RadazatabState();
 }
 
-class _BagacTabState extends State<BagacTab> {
+class _RadazatabState extends State<Radazatab> {
+
 
   static List <String> name = [
-    'Francis Gabriel Bagac',
-    'Lorraine Joy Bagac',
-    'Maria Lyra Bagac',
-    'Teofilo Bagac'
+    'Sean Joshua Radaza',
+    'Alfredo Ramon C. Lupisan',
+    'Blossommae Radaza',
+    'Isiah Stephan Radaza',
+    'Nikesha Allysson Radaza',
+    'Alfredo Ramon R. Lupisan Jr.',
+    'Herly Bemwdict R. Canoy',
+    'Harley Dave R. Canoy'
   ];
 
   static List aImage = [
-    'francis.jpg',
-    'lorraine.jpg',
-    'marialyra.jpg',
-    'teofilo.jpg'];
+      'sean_Radaza.jpg',
+      'Alfredo_Radaza.jpg',
+      'Blossommae_Radaza.jpg',
+      'isiah_Radaza.jpg',
+      'nikesha_Radaza.jpg',
+      'junior_Radaza.jpg',
+      'herly_Radaza.jpg',
+      'dave_Radaza.jpg'
+  ];
 
   static List <String> pRelationship = [
     'Me',
-    'Sister',
+    'Father',
     'Mother',
-    'Father'
+    'Brother',
+    'Sister',
+    'Brother',
+    'Brother',
+    'Brother',
+
   ];
 
   static List <String> pOccupation = [
     'Student',
-    'Teacher',
-    'House Wife',
-    'OFW'
+    'Diseased',
+    'Single Mom',
+    'Student',
+    'Student',
+    'Student',
+    'Student',
+    'Student'
   ];
 
   static List <String> pBirthday = [
-    'December 1, 2000',
-    'May 18, 1997',
-    'May 27, 1966',
-    'March 15, 1959'
+    'March 10, 1999',
+    '--------------',
+    'March 8, 1978',
+    'February 22, 2001',
+    'March 7, 2003',
+    'May 21, 2005',
+    'June 9, 2010',
+    'February 10, 2012'
   ];
 
   static List <String> pAge = [
-    '21',
-    '25',
+    '23',
     '56',
-    '63',
+    '40',
+    '21',
+    '19',
+    '17',
+    '13',
+    '10',
   ];
 
   final List<ProfileModel> profileData = List.generate(
@@ -73,7 +99,7 @@ class _BagacTabState extends State<BagacTab> {
       padding: const EdgeInsets.all(10),
       child: ListView.builder(
           itemCount: profileData.length,
-          itemBuilder: (context, index){
+          itemBuilder: (context, index) {
             return Card(
               child: Container(
                 decoration: BoxDecoration(
@@ -87,39 +113,32 @@ class _BagacTabState extends State<BagacTab> {
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           image: AssetImage(profileData[index].image),
-                        )
-                    ),
+                        )),
                   ),
-                  title: Text(profileData[index].name,
-                    style: const TextStyle(
-                        fontSize: 15,
-                        color: Colors.white
-                    ),
+                  title: Text(
+                    profileData[index].name,
+                    style: const TextStyle(fontSize: 15, color: Colors.white),
                   ),
-                  subtitle: Text(profileData[index].relationship,
-                    style: const TextStyle(
-                        fontSize: 10,
-                        color: Colors.white
-                    ),
+                  subtitle: Text(
+                    profileData[index].relationship,
+                    style: const TextStyle(fontSize: 10, color: Colors.white),
                   ),
-                  trailing: const Icon(Icons.arrow_forward_ios,
+                  trailing: const Icon(
+                    Icons.arrow_forward_ios,
                     color: Colors.white,
                   ),
-                  onTap: (){
-                    Navigator.push(context,
+                  onTap: () {
+                    Navigator.push(
+                        context,
                         MaterialPageRoute(
                             builder: (context) => const ProfileDetails(),
-                            settings: RouteSettings(
-                                arguments: profileData[index]
-                            )
-                        )
-                    );
+                            settings:
+                                RouteSettings(arguments: profileData[index])));
                   },
                 ),
               ),
             );
-          }
-      ),
+          }),
     );
   }
 }
