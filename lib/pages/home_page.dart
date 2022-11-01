@@ -74,9 +74,12 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
               ),
             ),
             bottom: PreferredSize(
-              preferredSize: const Size.fromHeight(30),
+              preferredSize: const Size.fromHeight(60),
                 child: TabBar(
-                  indicatorColor: Colors.white,
+                  indicator: BoxDecoration(
+                    borderRadius: BorderRadius.circular(80),
+                    color: Colors.lightBlue
+                  ),
                     isScrollable: true,
                     controller: tabController,
                     tabs: [
