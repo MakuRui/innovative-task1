@@ -34,6 +34,14 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [Colors.indigo, Colors.lightBlue],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight),
+            ),
+          ),
             centerTitle: false,
             title: Column(
               children: const <Widget> [
@@ -224,7 +232,7 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin{
                       BagacTab(),
                       DelaCruz(),
                       PacuitTab(),
-                      Radazatab(),
+                      RadazaTab(),
                       SamoyaTab(),
                     ]
                 )

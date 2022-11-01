@@ -76,8 +76,11 @@ class _PacuitTabState extends State<PacuitTab> {
             return Card(
               child: Container(
                 decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                      colors: [Colors.indigo, Colors.blueGrey],
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight),
                   borderRadius: BorderRadius.circular(20),
-                  color: Colors.indigo,
                 ),
                 child: ListTile(
                   leading: Container(
