@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:innovative_task1/pages/profile_details.dart';
 import '../models/profile_model.dart';
 
-class Radazatab extends StatefulWidget {
-  const Radazatab({Key? key}) : super(key: key);
+class RadazaTab extends StatefulWidget {
+  const RadazaTab({Key? key}) : super(key: key);
 
   @override
-  State<Radazatab> createState() => _RadazatabState();
+  State<RadazaTab> createState() => _RadazaTabState();
 }
 
-class _RadazatabState extends State<Radazatab> {
+class _RadazaTabState extends State<RadazaTab> {
 
 
   static List <String> name = [
     'Sean Joshua Radaza',
     'Alfredo Ramon C. Lupisan',
-    'Blossommae Radaza',
+    'Blossom mae Radaza',
     'Isiah Stephan Radaza',
     'Nikesha Allysson Radaza',
     'Alfredo Ramon R. Lupisan Jr.',

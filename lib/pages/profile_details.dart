@@ -20,7 +20,7 @@ class _ProfileDetailsState extends State<ProfileDetails> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(profileModel.name,
-          style: const TextStyle(fontSize: 30),
+          style: const TextStyle(fontSize: 15),
         ),
       ),
       body: Card(
